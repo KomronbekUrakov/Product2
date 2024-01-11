@@ -1,0 +1,75 @@
+.site-footer {
+}
+.footer {
+  @include display();
+}
+
+.footer__logo-innerwrap {
+  margin-top: 24px;
+}
+.footer__list-title {
+  @include textStyle($fsize: 20px, $fweight: 500, $lheight: 30px);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.footer__item {
+  @include textStyle($lheight: 35px);
+}
+.footer__form {
+  width: 325px;
+}
+.footer__form-title {
+  @include textStyle($fsize: 20px, $fweight: 500, $lheight: 30px);
+}
+.footer__input {
+  width: 325px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #bcd0e5;
+  background: #fff;
+  margin-top: 34px;
+
+}
+.footer__input::placeholder {
+  color: #bcd0e5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.footer__btn {
+  @include btn(
+    $btnwidth: 140px,
+    $btnpadding: 8px 15px 7px
+  );
+  border: none;
+  outline: none;
+  margin-top: 21px;
+}
+.rights {
+    @include textStyle($fsize: 16px, $fweight: 400, $lheight: 30px);
+    text-align: center;
+    margin-top: 16px;
+}
+@media (max-width: 1100px){
+  .footer {
+    @include display($direction:column);
+  };
+  .footer__logo-wrap {
+  margin-bottom: 31px;
+  text-align: center;
+  };
+  .footer__list-wrap{
+    text-align: center;
+    margin-bottom: 32px;
+  }
+.footer__list{
+    text-align: center;
+  };
+  .footer__form {
+    width: 100%;
+    text-align: center;
+  }
+}

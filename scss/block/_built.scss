@@ -1,0 +1,91 @@
+.built__section {
+  background-image: url(../images/built-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 90px;
+  margin-bottom: 169px;
+}
+
+.built {
+  text-align: center;
+}
+.built__title-wrap {
+  width: 500px;
+  margin: 0 auto;
+}
+.built__title {
+  @include textStyle($fsize: 32px, $fweight: 700, $lheight: normal);
+}
+.built__list {
+  @include display();
+  width: 100%;
+  margin-top: 66px;
+  margin-bottom: 34px;
+  align-items: center;
+  text-align: center;
+}
+.built__item {
+  text-align: start;
+}
+.built__item-title {
+  @include textStyle($fsize: 22px, $fweight: 600, $lheight: normal);
+  margin: 30px 0 13px;
+}
+.built__item-text {
+  @include textStyle($fsize: 16px, $fweight: 400, $lheight: 26px);
+}
+.build__btn {
+  @include btn();
+}
+@media (max-width:1100px){
+  .built__title-wrap {
+    max-width: 500px;
+  }
+  .built__title {
+    @include textStyle($fsize: 25px, $fweight: 700, $lheight: normal);
+  }
+  .built__item-title {
+    @include textStyle($fsize: 15px, $fweight: 600, $lheight: normal);
+    margin: 20px 0 10px;
+  }
+  .built__item-text {
+    @include textStyle($fsize: 12px, $fweight: 400, $lheight: 20px);
+  }
+  .build__btn {
+    @include btn($btnfsize:12px);
+  }
+};
+@media (max-width: 832px){
+  .built__section {
+    background-image: url(../../images/hero-mob-bg.png);
+    padding-bottom: 42px;
+    margin-bottom: 95px;
+  }
+  .built__title-wrap {
+    width: 100%;
+  }
+  .built__title {
+    @include textStyle($fsize: 32px, $fweight: 700, $lheight: normal);
+  }
+  .built__list {
+    @include display($direction:column);
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 37px;
+  }
+  .built__item {
+    width: 240px;
+    text-align: center;
+  }
+  .built__item-title {
+    @include textStyle($fsize: 22px, $fweight: 600, $lheight: normal);
+    margin: 30px 0 13px;
+  }
+  .built__item-text {
+    @include textStyle($fsize: 16px, $fweight: 400, $lheight: 26px);
+  }
+  .build__btn {
+    @include btn();
+  }
+}

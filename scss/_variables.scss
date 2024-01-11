@@ -1,0 +1,49 @@
+@mixin display(
+  $display: flex,
+  $items: center,
+  $justify: space-between,
+  $direction: row
+) {
+  display: $display;
+  align-items: $items;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+@mixin textStyle(
+  $font: "Poppins" sans-serif,
+  $textcolor: #22343d,
+  $fsize: 16px,
+  $fweight: 400,
+  $lheight: 28px
+) {
+  color: $textcolor;
+  font-family: $font;
+  font-size: $fsize;
+  font-weight: $fweight;
+  line-height: $lheight;
+}
+@mixin btn(
+  $btncolor: #fff,
+  $btnfont: "Poppins" sans-serif,
+  $btnfsize: 16px,
+  $btnfweight: 700,
+  $btnwidth: 175px,
+  $btnpadding:15px 0 14px
+) {
+  color: $btncolor;
+  font-family: $btnfont;
+  font-size: $btnfsize;
+  font-style: normal;
+  font-weight: $btnfweight;
+  line-height: normal;
+  width: $btnwidth;
+  border-radius: 4px;
+  background: #02897a;
+  text-align: center;
+  padding: $btnpadding;
+  display: inline-block;
+  &:hover {
+    background-color: #fff;
+    color: #173A56;
+  }
+}

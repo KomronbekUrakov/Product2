@@ -1,0 +1,39 @@
+.support__section {
+    margin-bottom: 150px;
+}
+.support {
+  @include display();
+}
+.support__content {
+  max-width: 486px;
+}
+.support__name {
+  @include textStyle($fweight: 600, $lheight: normal);
+}
+.support__title {
+  @include textStyle($fsize: 32px, $fweight: 700, $lheight: normal);
+}
+.support__text {
+  @include textStyle($fsize: 16px, $fweight: 400, $lheight: 26px);
+}
+.support__card-wrap {
+}
+.support__card {
+  @include display();
+  gap: 30px;
+  margin-top: 30px;
+}
+@media(max-width:820px){
+  .support__section {
+    margin-bottom: 97px;
+}
+.support {
+  @include display($direction:column);
+}
+.support-content-img{
+  width: 320px;
+  height: 280px;
+  margin-bottom: 50px;
+}
+}
+

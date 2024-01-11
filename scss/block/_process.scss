@@ -1,0 +1,106 @@
+.process__section {
+  background-image: url(../images/process-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 150px;
+  padding-top: 52px;
+  background-position-y: top;
+}
+
+.process {
+  text-align: center;
+}
+.process__title {
+  @include textStyle($fsize: 32px, $fweight: 700, $lheight: normal);
+  margin-bottom: 16px;
+}
+.process__text {
+  @include textStyle(
+    $font: "Poppins" sans-serif,
+    $textcolor: #22343d,
+    $fsize: 16px,
+    $fweight: 500,
+    $lheight: 26px
+  );
+  margin-bottom: 32px;
+}
+.process__card-wrap {
+  @include display($justify: center);
+  margin-bottom: 24px;
+  gap: 178px;
+}
+.process__card {
+  @include display();
+  max-width: 450px;
+  gap: 16px;
+}
+.process__card-img {
+  width: 98px;
+  height: 98px;
+}
+.process__card-text {
+  @include textStyle($textcolor: #2f281e, $fweight: 500, $lheight: normal);
+  padding: 15px 25px 14px;
+  border-radius: 26.5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
+}
+.process__card-wrap2 {
+  @include display($justify: center);
+  margin-bottom: 48px;
+  gap: 191px;
+}
+.process__btn {
+  @include btn($btnwidth: 216px);
+}
+@media (max-width: 820px) {
+  .process__section {
+    background-image: url(../../images/process-mob-bg.png);
+    margin-bottom: 150px;
+    padding-top: 73px;
+    background-position-y: top;
+  }
+
+  .process__title {
+    @include textStyle($fsize: 32px, $fweight: 700, $lheight: normal);
+    margin-bottom: 8px;
+  }
+  .process__text {
+    @include textStyle(
+      $font: "Poppins" sans-serif,
+      $textcolor: #22343d,
+      $fsize: 16px,
+      $fweight: 500,
+      $lheight: 26px
+    );
+    margin-bottom: 39px;
+  }
+  .process__card-wrap {
+    @include display($justify: center, $direction: column);
+    margin-bottom: 32px;
+    gap: 32px;
+  }
+  .process__card {
+    @include display();
+    max-width: 450px;
+    gap: 16px;
+  }
+  .process__card-img {
+    width: 98px;
+    height: 98px;
+  }
+  .process__card-text {
+    @include textStyle($textcolor: #2f281e, $fweight: 500, $lheight: normal);
+    padding: 15px 25px 14px;
+    border-radius: 26.5px;
+    background: #fff;
+    max-width: 225px;
+    box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
+  }
+  .process__card-wrap2 {
+    @include display($direction: column, $justify: center);
+    margin-bottom: 32px;
+    gap: 32px;
+  }
+}

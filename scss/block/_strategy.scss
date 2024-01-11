@@ -1,0 +1,80 @@
+.strategy__section {
+  margin-bottom: 150px;
+}
+.strategy {
+  text-align: start;
+}
+.strategy__title {
+  @include textStyle($fsize: 34px, $fweight: 700, $lheight: normal);
+  margin-bottom: 8px;
+}
+.strategy__text {
+  @include textStyle($fsize: 16px, $fweight: 500, $lheight: 26px);
+  margin-bottom: 33px;
+}
+
+.strategy__card-wrap {
+  @include display();
+  margin-bottom: 64px;
+}
+.strategy__card {
+  max-width: 348px;
+  max-height: 359px;
+  border: 1px solid rgb(229, 223, 223);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  padding: 0 30px 40px 24px;
+}
+.strategy__card-text {
+  @include textStyle($fsize: 16px, $fweight: 400, $lheight: 28px);
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.strategy__card-text-content {
+  @include textStyle($fsize: 16px, $fweight: 700, $lheight: 28px);
+}
+.strategy__card-title {
+  @include textStyle($fsize: 24px, $fweight: 700, $lheight: 40px);
+}
+.strategy__card-title2 {
+  @include textStyle(
+    $textcolor: #02897a,
+    $fsize: 24px,
+    $fweight: 700,
+    $lheight: 40px
+  );
+}
+.strategy-carosolt-wrap {
+  display: block;
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  .strategy__section {
+    margin-bottom: 61px;
+  }
+  .strategy {
+    text-align: center;
+  }
+  .strategy__title {
+    @include textStyle($fsize: 34px, $fweight: 700, $lheight: normal);
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .strategy__text {
+    @include textStyle($fsize: 16px, $fweight: 500, $lheight: 26px);
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .strategy__card-wrap {
+    @include display($direction: column);
+    gap: 15px;
+  }
+
+  .strategy-carosolt-wrap {
+    display: none;
+  }
+}
